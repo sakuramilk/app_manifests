@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch=".." />
+
+  <default revision="master"
+           remote="github"
+           sync-j="4" />
+
+  <project path="app_manifests" name="sakuramilk/app_manifests.git" >
+    <copyfile src="as/build.gradle" dest="build.gradle" />
+    <copyfile src="as/settings.gradle" dest="settings.gradle" />
+    <copyfile src="as/gradle/wrapper/gradle-wrapper.jar" dest="gradle/wrapper/gradle-wrapper.jar" />
+    <copyfile src="as/gradle/wrapper/gradle-wrapper.properties" dest="gradle/wrapper/gradle-wrapper.properties" />
+  </project>
+
+  <project path="TweakLibrary" name="sakuramilk/TweakLibrary.git" />
+  <project path="TweakGS3" name="sakuramilk/TweakGS3.git" />
+  <project path="TweakGS4" name="sakuramilk/TweakGS4.git" />
+  <!--<project path="TweakGS5" name="sakuramilk/TweakGS5.git" />-->
+
+</manifest>
